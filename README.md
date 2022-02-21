@@ -9,11 +9,11 @@ exponentiation: **     //2 ** 3 = 8
 modulo: %              //find the remainder after dividing   9%2=1
 integer division: // round down the division result (only reserve the integer part)   7//2=3  -7//2=-4
 
-## reserved words in Python:
+## Reserved words in Python:
 // False await else import pass None break except in raise True class finally is return and continue for lambda try as def from nonlocal while assert 
 del global not with async elif if or yield 
 
-## some examples given to show the assignment of value in Python (simplified mode):
+## Some examples given to show the assignment of value in Python (simplified mode):
 #The current volume of a water reservoir (in cubic metres)
 reservoir_volume = 4.445e8
 
@@ -40,7 +40,7 @@ reservoir_volume -= 2.5e5
 #print the new value of the reservoir_volume variable
 print(reservoir_volume)
 
-## integer and floats
+## Integer and floats
 // use type to 
 
 
