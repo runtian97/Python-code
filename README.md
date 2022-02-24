@@ -108,9 +108,9 @@ a=6.5
 >>> str(a)
 '6.5'
 
-## string methods
+## string methods: always called with dot 
 // "title" can be used to capitalize the name, example: 
-print ("china gao".title())
+print ("china gao".title()) // 
 China Gao
 
 
