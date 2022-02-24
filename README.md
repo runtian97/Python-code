@@ -41,7 +41,20 @@ reservoir_volume -= 2.5e5
 print(reservoir_volume)
 
 ## Integer and floats
-// use type to 
+// use type to recognize the types of number, example:
+type(5.6)
+<class 'float'>
+
+## Boolean 
+and: evaluates if both are true 
+or: evaluate if at least one ofmany is true
+not: flip the bool value
+//example: 
+age = 14
+is_teen = age > 12 and age < 20 
+print(is_teen) 
+True
+
 
 
 
