@@ -11,7 +11,7 @@ integer division: // round down the division result (only reserve the integer pa
 
 ## Reserved words in Python:
 // False await else import pass None break except in raise True class finally is return and continue for lambda try as def from nonlocal while assert 
-del global not with async elif if or yield 
+del global not with async elif if or yield  
 
 ## Some examples given to show the assignment of value in Python (simplified mode):
 #The current volume of a water reservoir (in cubic metres)
@@ -39,11 +39,6 @@ reservoir_volume -= 2.5e5
 
 #print the new value of the reservoir_volume variable
 print(reservoir_volume)
-
-## Integer and floats
-// use type to recognize the types of number, example:
-type(5.6)
-<class 'float'>
 
 ## Boolean 
 and: evaluates if both are true 
@@ -93,7 +88,19 @@ b = "luterbacher"
 print(len(a)/len(b))
 0.5454545454545454
 
+## Integer, floats and 
+// use type to recognize the types of number, example:
+type(5.6)
+<class 'float'>
 
+// type can be changed, example: 
+a=6.5
+>>> int(a)
+6
+>>> float(a)
+6.5
+>>> str(a)
+'6.5'
 
 
 
