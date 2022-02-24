@@ -109,9 +109,9 @@ a=6.5
 '6.5'
 
 ## string methods
-// "title" can be used to capitalize the first alphabet of a string, example: 
-print ("china".title())
-China
+// "title" can be used to capitalize the name, example: 
+print ("china gao".title())
+China Gao
 
 
 
