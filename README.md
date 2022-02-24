@@ -55,6 +55,26 @@ is_teen = age > 12 and age < 20
 print(is_teen) 
 True
 
+//Basic comparison operation
+less than: <
+greater than: > 
+less than or equal to: <=
+greater than or equal to: >= 
+equal to: ==
+not equal to: !=
+
+## Strings 
+// examples: 
+a = 'I wanna quit my PhD' 
+print(a)
+I wanna quit my PhD
+
+// if there is already quotes in the strings, then back slash is needed, example: 
+b = "Simon\'s skateboard is in the garage"
+print(b)
+Simon's skateboard is in the garage
+
+
 
 
 
