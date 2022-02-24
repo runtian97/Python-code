@@ -74,6 +74,28 @@ b = "Simon\'s skateboard is in the garage"
 print(b)
 Simon's skateboard is in the garage
 
+// "+" can be used to combine two strings, examlpe: 
+a = "hello"
+b = "world"
+print(a+" "+b)
+hello world
+
+// "*" can be used to repeat the stings, examples:
+a = "jeremy"
+print((a+" ")*5)
+jeremy jeremy jeremy jeremy jeremy 
+
+// "len" can be used to count the length of a string, example:
+a="jeremy"
+print(len(a))
+6
+b = "luterbacher"
+print(len(a)/len(b))
+0.5454545454545454
+
+
+
+
 
 
 
