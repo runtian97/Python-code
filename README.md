@@ -88,6 +88,12 @@ b = "luterbacher"
 print(len(a)/len(b))
 0.5454545454545454
 
+//"[]" can be used to check out the alphabet or number at different locations of the string (always [0] indicates the first one of the string), example:
+a = 'lebron'
+>>> a[0]
+'l'
+
+
 ## Integer, floats and 
 // use type to recognize the types of number, example:
 type(5.6)
