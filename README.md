@@ -108,7 +108,10 @@ a=6.5
 >>> str(a)
 '6.5'
 
-
+## string methods
+// "title" can be used to capitalize the first alphabet of a string, example: 
+print ("china".title())
+China
 
 
 
