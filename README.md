@@ -114,10 +114,30 @@ print ("china gao".title())
 China Gao
 
 //several methods can be used and called by ".", examples:
-capitalize() encode() format() isalpha() islower() istitle() 
-casefold() endswith() format_map() isdecimal() isnumeric() isupper()
-center() expandtabs() index() isdigit() isprintable() join()
-count() find() isalnum() isidentifier() isspace() ljust()
+capitalize()      //capitalize() method converts the first character of the string to a capital letter
+encode()          //The encode() method returns an encoded version of the string
+format()          //Permits you to try and do variable substitutions and data formatting.
+isalpha()         //isalpha() method returns True if all the characters are alphabet letters
+islower()         //The islower() method returns True if all characters in the string are lowercase
+istitle() 
+casefold() 
+endswith() 
+format_map() 
+isdecimal() 
+isnumeric() 
+isupper()
+center() 
+expandtabs() 
+index() 
+isdigit() 
+isprintable() 
+join()
+count() 
+find() 
+isalnum() 
+isidentifier() 
+isspace() 
+ljust()
 
 
 
