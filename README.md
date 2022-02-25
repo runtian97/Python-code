@@ -61,8 +61,8 @@ not equal to: !=
 ## Strings 
 // examples: 
 >>> a = 'I wanna quit my PhD' 
->>> print(a)
->>> I wanna quit my PhD
+    print(a)
+    I wanna quit my PhD <<<
 
 // if there is already quotes in the strings, then back slash is needed, example: 
 >>> b = "Simon\'s skateboard is in the garage"
