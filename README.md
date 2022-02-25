@@ -109,11 +109,15 @@ a=6.5
 '6.5'
 
 ## string methods: always called with dot 
-// "title" can be used to capitalize the name, example: 
-print ("china gao".title()) // 
+// "title" can be used to capitalize the name(both first name and last name), example: 
+print ("china gao".title()) 
 China Gao
 
-
+//several methods can be used and called by ".", examples:
+capitalize() encode() format() isalpha() islower() istitle() 
+casefold() endswith() format_map() isdecimal() isnumeric() isupper()
+center() expandtabs() index() isdigit() isprintable() join()
+count() find() isalnum() isidentifier() isspace() ljust()
 
 
 
