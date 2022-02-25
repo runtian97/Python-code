@@ -60,14 +60,14 @@ not equal to: !=
 
 ## Strings 
 // examples: 
-a = 'I wanna quit my PhD' 
-print(a)
-I wanna quit my PhD
+>>> a = 'I wanna quit my PhD' 
+>>> print(a)
+>>> I wanna quit my PhD
 
 // if there is already quotes in the strings, then back slash is needed, example: 
 b = "Simon\'s skateboard is in the garage"
-print(b)
-Simon's skateboard is in the garage
+>>> print(b)
+>>> Simon's skateboard is in the garage
 
 // "+" can be used to combine two strings, examlpe: 
 a = "hello"
