@@ -66,54 +66,62 @@ print(a)
 I wanna quit my PhD 
 ```
 // if there is already quotes in the strings, then back slash is needed, example: 
->b = "Simon\'s skateboard is in the garage"
+```
+b = "Simon\'s skateboard is in the garage"
 print(b)
 Simon's skateboard is in the garage
-
+```
 // "+" can be used to combine two strings, examlpe: 
->a = "hello"
+```
+a = "hello"
 b = "world"
 print(a+" "+b)
 hello world
-
+```
 // "*" can be used to repeat the stings, examples:
->a = "jeremy"
+```
+a = "jeremy"
 print((a+" ")*5)
 jeremy jeremy jeremy jeremy jeremy 
-
+```
 // "len" can be used to count the length of a string, example:
->a="jeremy"
+```
+a="jeremy"
 print(len(a))
 6
 b = "luterbacher"
 print(len(a)/len(b))
 0.5454545454545454
-
+```
 //"[]" can be used to check out the alphabet or number at different locations of the string (always [0] indicates the first one of the string), example:
->a = 'lebron'
+```
+a = 'lebron'
 a[0]
 'l'
-
+```
 
 ## Integer, floats and 
 // use type to recognize the types of number, example:
->type(5.6)
+```
+type(5.6)
 <class 'float'>
-
+```
 // type can be changed, example: 
->a=6.5
+```
+a=6.5
 int(a)
 6
 float(a)
 6.5
 str(a)
 '6.5'
-
+```
 ## string methods: always called with dot 
-// "title" can be used to capitalize the name(both first name and last name), example: 
->print ("china gao".title()) 
+//"title" can be used to capitalize the name(both first name and last name), example: 
+```
+print ("china gao".title()) 
 China Gao
-
+```
 //several methods can be used and called by ".", examples:
 capitalize()      //capitalize() method converts the first character of the string to a capital letter
 encode()          //The encode() method returns an encoded version of the string
@@ -123,44 +131,51 @@ islower()         //The islower() method returns True if all characters in the s
 istitle()         //The istitle() method returns True if all words in a text start with a upper case letter. 
 casefold()        //The casefold() method returns a string where all the characters are in lower case
 endswith()        //The endswith() method returns True if a string ends with the specified suffix, example:
->b="abc"
+```
+b="abc"
 print(b.endswith("c"))
 True
-
+```
 format_map()      //which is used to return a dictionary key's value, for example:
->s = 'My name is {name} and I am a {job_title}'
+```
+s = 'My name is {name} and I am a {job_title}'
 my_dict = {'name': 'Pankaj', 'job_title': 'Software Engineer'}
 print(s.format_map(my_dict))
 print(s.format(**my_dict))
-
+```
 isdecimal()       //The isdecimal() method returns True if all characters in a string are decimal characters, example:
->s = "28212"
+```
+s = "28212"
 print(s.isdecimal())
 True 
-
+```
 isnumeric()       //True if all characters in the string are numeric characters.
 isupper()         //Check if all the characters in the text are in upper case.
 center()          //The center() method will center align the string-----string.center(width[, fillchar])------example:
->a="jeremy is coming"
+```
+a="jeremy is coming"
 print(a.center(24,"*"))
 ****jeremy is coming****
-
+```
 expandtabs()      //The expandtabs() method returns a copy of string with all tab characters '\t' replaced with whitespace characters until the next multiple of tabsize parameter, examlpe:
->str = 'xyz\t12345\tabc'
+```
+str = 'xyz\t12345\tabc'
 print(str.expandtabs())
 xyz     12345   abc
-
+```
 index()           //The index() method returns the index(location) of a substring inside the string (if found). If the substring is not found, it raises an exception, examlpe:
->text = 'Python is fun'
+```
+text = 'Python is fun'
 print(text. index('s'))
 8 (the eighth)
-
+```
 isdigit()         // Returns true if all strings are composed of numbers exclusively
 isprintable()     // The isprintable() methods returns True if all characters in the string are printable or the string is empty, example:
->c="/c sees luterbacher" 
+```
+c="/c sees luterbacher" 
 print(s. isprintable())
 True
-
+```
 join()
 count() 
 find() 
