@@ -119,18 +119,49 @@ encode()          //The encode() method returns an encoded version of the string
 format()          //Permits you to try and do variable substitutions and data formatting.
 isalpha()         //isalpha() method returns True if all the characters are alphabet letters
 islower()         //The islower() method returns True if all characters in the string are lowercase
-istitle() 
-casefold() 
-endswith() 
-format_map() 
-isdecimal() 
-isnumeric() 
-isupper()
-center() 
-expandtabs() 
-index() 
-isdigit() 
-isprintable() 
+istitle()         //The istitle() method returns True if all words in a text start with a upper case letter. 
+casefold()        //The casefold() method returns a string where all the characters are in lower case
+endswith()        //The endswith() method returns True if a string ends with the specified suffix, example:
+b="abc"
+print(b.endswith("c"))
+True
+
+format_map()      //which is used to return a dictionary key's value, for example:
+s = 'My name is {name} and I am a {job_title}'
+
+my_dict = {'name': 'Pankaj', 'job_title': 'Software Engineer'}
+
+print(s.format_map(my_dict))
+print(s.format(**my_dict))
+
+isdecimal()       //The isdecimal() method returns True if all characters in a string are decimal characters, example:
+s = "28212"
+print(s.isdecimal())
+True 
+
+isnumeric()       //True if all characters in the string are numeric characters.
+isupper()         //Check if all the characters in the text are in upper case.
+center()          //The center() method will center align the string-----string.center(width[, fillchar])------example:
+a="jeremy is coming"
+>>> print(a.center(24,"*"))
+****jeremy is coming****
+
+expandtabs()      //The expandtabs() method returns a copy of string with all tab characters '\t' replaced with whitespace characters until the next multiple of tabsize parameter, examlpe:
+str = 'xyz\t12345\tabc'
+>>> print(str.expandtabs())
+xyz     12345   abc
+
+index()           //The index() method returns the index(location) of a substring inside the string (if found). If the substring is not found, it raises an exception, examlpe:
+text = 'Python is fun'
+>>> print(text. index('s'))
+8 (the eighth)
+
+isdigit()         // Returns true if all strings are composed of numbers exclusively
+isprintable()     // The isprintable() methods returns True if all characters in the string are printable or the string is empty, example:
+c="/c sees luterbacher" 
+>>> print(s. isprintable())
+>>> True
+
 join()
 count() 
 find() 
