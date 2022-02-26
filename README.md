@@ -200,10 +200,35 @@ b= "I will never give up my dream"
 print(b. find('i',5,20))         //add conditions in find() brackets, separated by coma. 
 14
 ```
-isalnum() 
-isidentifier() 
+isalnum()         // The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers), for example:
+```
+name = "M234onica"
+print(name.isalnum())
+True
+```
+isidentifier()    // The isidentifier() method returns True if the string is a valid identifier in Python
+```
+str = 'Python'
+print(str.isidentifier())
+True
+```
 isspace() 
 ljust()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
