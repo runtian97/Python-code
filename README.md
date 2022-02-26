@@ -194,8 +194,11 @@ a="I will stand on the top of the mountain"
 print(a.find('of'))
 24
 ```
-`
-cr
+// extra conditions can be added to confine the range
+```
+b= "I will never give up my dream"
+print(b. find('i',5,20))         //add conditions in find() brackets, separated by coma. 
+14
 ```
 isalnum() 
 isidentifier() 
