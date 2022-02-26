@@ -206,14 +206,27 @@ name = "M234onica"
 print(name.isalnum())
 True
 ```
-isidentifier()    // The isidentifier() method returns True if the string is a valid identifier in Python
+isidentifier()    // The isidentifier() method returns True if the string is a valid identifier in Python, for example:
 ```
 str = 'Python'
 print(str.isidentifier())
 True
 ```
-isspace() 
-ljust()
+isspace()         // The isspace() method returns True if there are only whitespace characters in the string, for example:
+```
+s = '   \t'
+print(s.isspace())
+True
+```
+ljust().          // The string ljust() method returns a left-justified string of a given minimum width, for example:
+```
+string = 'cat'
+width = 5
+print(string.ljust(width))
+cat 
+```
+
+
 
 
 
