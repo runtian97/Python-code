@@ -182,7 +182,12 @@ a=['I', 'am', 'Iron', 'man']   // can also be a=('I', 'am', 'Iron', 'man')
 print(' '.join(a))             // in this case, use blank to separate words
 I am Iron man
 ```
-count() 
+count()           // The count() method returns the number of occurrences of a substring in the given string, for example:
+```
+a= "I like chemistry "   
+print(a.count('c'))      // can also be: print("the number of c is:",a.count('c')).  // add one more introduction string before the method 
+1                        // the output would be: the number of c is: 1                                                       
+```
 find() 
 isalnum() 
 isidentifier() 
