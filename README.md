@@ -194,7 +194,8 @@ a="I will stand on the top of the mountain"
 print(a.find('of'))
 24
 ```
-cdcd
+`
+cr
 ```
 isalnum() 
 isidentifier() 
