@@ -188,7 +188,14 @@ a= "I like chemistry "
 print(a.count('c'))      // can also be: print("the number of c is:",a.count('c')).  // add one more introduction string before the method 
 1                        // the output would be: the number of c is: 1                                                       
 ```
-find() 
+find()            // is used to find the location of a string, for example"
+```
+a="I will stand on the top of the mountain"
+print(a.find('of'))
+24
+```
+cdcd
+```
 isalnum() 
 isidentifier() 
 isspace() 
