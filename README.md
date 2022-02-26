@@ -176,7 +176,12 @@ c="/c sees luterbacher"
 print(s. isprintable())
 True
 ```
-join()
+join()            // Returns a string by joining all the elements of an iterable (list, string, tuple), separated by a string separator, for example:
+```
+a=['I', 'am', 'Iron', 'man']   // can also be a=('I', 'am', 'Iron', 'man')
+print(' '.join(a))             // in this case, use blank to separate words
+I am Iron man
+```
 count() 
 find() 
 isalnum() 
