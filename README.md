@@ -119,7 +119,7 @@ str(a)
 ## string methods: always called with dot 
 //"title" can be used to capitalize the name(both first name and last name), example: 
 ```
-print ("china gao".title()) 
+#print ("china gao".title()) 
 China Gao
 ```
 //several methods can be used and called by ".", examples:
@@ -248,7 +248,29 @@ print(a.split(","))                 //when the separator is a coma, since there 
 ['lebron is a bullshit']
 ```
 
+maxsplit can also be specified to  **choose split from which position**, for example: 
+```
+grocery = 'Milk, Chicken, Bread, Butter'
 
+# maxsplit: 2
+print(grocery.split(', ', 2))
+
+# maxsplit: 1
+print(grocery.split(', ', 1))
+
+# maxsplit: 5
+print(grocery.split(', ', 5))
+
+# maxsplit: 0
+print(grocery.split(', ', 0))
+```
+output;
+```
+['Milk', 'Chicken', 'Bread, Butter']
+['Milk', 'Chicken, Bread, Butter']
+['Milk', 'Chicken', 'Bread', 'Butter']
+['Milk, Chicken, Bread, Butter']
+```
 
 
 
