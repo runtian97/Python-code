@@ -236,8 +236,17 @@ width = 5
 print(string.ljust(width))
 cat 
 ```
-
-
+split().         // breaks up a string **at the specified separator**(the separator should be mentioned in method if there is) and returns a list of strings, for example: 
+```
+a="lebron is a bullshit"
+print(a.split())                    // separate at "blank"
+['lebron', 'is', 'a', 'bullshit']
+```
+```
+a="lebron is a bullshit"
+print(a.split(","))                 //when the separator is a coma, since there is no coma in string "a", the split would not be processed
+['lebron is a bullshit']
+```
 
 
 
