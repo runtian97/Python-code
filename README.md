@@ -211,6 +211,12 @@ b= "I will never give up my dream"
 print(b. find('i',5,20))         //add conditions in find() brackets, separated by coma. 
 14
 ```
+//rfind() can be used to find the last occurance of an index, for example;
+```
+a='b,c,v,n,n,m'
+print(a. rfind('n'))
+8
+```
 isalnum()         // The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers), for example:
 ```
 name = "M234onica"
