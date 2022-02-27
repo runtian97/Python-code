@@ -270,7 +270,7 @@ print(grocery.split(', ', 5))
 # maxsplit: 0
 print(grocery.split(', ', 0))
 ```
-output;
+output:
 ```
 ['Milk', 'Chicken', 'Bread, Butter']
 ['Milk', 'Chicken, Bread, Butter']
@@ -279,6 +279,7 @@ output;
 ```
 
 
+## Data Structure
 
 
 
