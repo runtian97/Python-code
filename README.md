@@ -125,7 +125,18 @@ China Gao
 //several methods can be used and called by ".", examples:
 capitalize()      //capitalize() method converts the first character of the string to a capital letter
 encode()          //The encode() method returns an encoded version of the string
-format()          //Permits you to try and do variable substitutions and data formatting.
+format()          //Permits you to try and do variable substitutions and data formatting, example:
+```
+print('Mohanmmed has {} balloons'. format(27))
+Mohanmmed has 27 balloons
+```
+```
+a='dog'
+b='bite'
+print('does your {} {}?'. format(a,b))
+does your dog bite?
+```
+
 isalpha()         //isalpha() method returns True if all the characters are alphabet letters
 islower()         //The islower() method returns True if all characters in the string are lowercase
 istitle()         //The istitle() method returns True if all words in a text start with a upper case letter. 
