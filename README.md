@@ -280,8 +280,15 @@ output:
 
 
 ## Data Structure
-
-
+### List
+// list is the most common and basic data structure in Python, can be created with ***square brackets***, the index starts from zero, for example:
+```
+list = [1,2,3,4,56,78]
+>>> list[0]
+1
+>>> list[3]
+4
+```
 
 
 
