@@ -364,6 +364,17 @@ print(sorted(m))
 ['a', 'd', 'g', 'v']
 ```
 
+//join() is used to separate a list of strings with different elements, for example: 
+```
+a=['China','England','Russia','India']
+print('\n'.join(a))
+China
+England
+Russia
+India
+
+```
+
 
 
 
