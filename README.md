@@ -284,18 +284,44 @@ output:
 // list is the most common and basic data structure in Python, can be created with ***square brackets***, the index starts from zero, for example:
 ```
 list = [1,2,3,4,56,78]
-list[0]
+list[0]                //all list starts from index 0 
 1
 list[3]
 4
 ```
 ```
 b=[3,5,6,6]
-len(b)
+len(b)                 //from index 0 to 3, the length of the list is 4. 
 4
 ```
+```
+a=[2,3,4,5]
+a[-1]                  //"-1" is the index of the last one in the list, while "-2" is the second to the last one in the list. 
+5
+```
 
+//slice a list, for example:
+```
+months=['january','Feburary','March','April','May','June','July','August','September','October','November','December']
+print(months[6:9])     //from index 6 to index 9
+['July', 'August', 'September']
+print(months[:6])      //print the first half year  
+['january', 'Feburary', 'March', 'April', 'May', 'June']
+print(months[6:])      //print the second half year
+['July', 'August', 'September', 'October', 'November', 'December']
+print(months[2:3])     //when slicing, the lower index is inclusive while the upper index is exclusive 
+['March']
+```
 
+// use 'in" or "not in =" to return a bool of whether an element exists within the list, for example:
+```
+'isa' not in 'american'
+True
+'isa' in 'china'
+False
+```
+
+//Mutability and Order
 
 
 
