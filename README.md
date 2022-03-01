@@ -372,9 +372,23 @@ China
 England
 Russia
 India
+```
+```
+a=['China','England','Russia','India']
+print(' '.join(a))
+China England Russia India
+```
+```
+a=['China','England','Russia','India']
+print('\f'.join(a))
+China
+     England
+            Russia
+                  India
 
 ```
 
+//
 
 
 
