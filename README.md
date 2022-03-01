@@ -313,7 +313,7 @@ print(months[2:3])     //when slicing, the lower index is inclusive while the up
 ['March']
 ```
 
-// use 'in" or "not in =" to return a bool of whether an element exists within the list, for example:
+// use 'in" or "not in =" to return a bool of whether an ***element exists within the list***, for example:
 ```
 'isa' not in 'american'
 True
@@ -321,17 +321,48 @@ True
 False
 ```
 
-//Mutability and Order
+//Mutability: whether or not we can change an object once it has been created. 
+```
+list= [1,2,3,4]
+list[0]='Nick'        //change the list 
+print(list)
+['Nick', 2, 3, 4]     //a new list is created, so list is mutable.
+```
+```
+a='hellow there'
+a[0]
+'h'                   // the string starts from index 0   
+a[0]='go'
+Traceback (most recent call last):    
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment 
+```
+
+// Order is whether the position of an element in the object can be used to access the element. Both strings and lists are ordered.
 
 
+### Useful functions for list
+// len() to calculate how many elements are there in the list, for example:
+```
+m=['a','d','v','g']
+print(len(m))
+4
+```
 
+//max() returns the greatest element in the list, for example: 
+```
+m=['a','d','v','g']
+print(max(m))
+v                     //The maximum elements in a list of strings is element that would occur last if the list were sorted alphabetically
+```
+//min() In the opposite way, returning the smallest element in the list.
 
-
-
-
-
-
-
+//sorted() returns a copy of the list in order from smallest to biggest, for example:
+```
+m=['a','d','v','g']
+print(sorted(m))
+['a', 'd', 'g', 'v']
+```
 
 
 
