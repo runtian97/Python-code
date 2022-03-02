@@ -388,7 +388,33 @@ China
 
 ```
 
-//
+//append() is used to add an element to the end of the list, for example:
+```
+letters = ['a', 'b', 'c', 'd']
+letters.append('z')            //an individual line of coding is needed to add 'z' to the end of the list. 
+print(letters)
+['a', 'b', 'c', 'd', 'z']
+```
+
+### Tuples: 
+// Tuple is a data type for immutable ordered sequence of elements, in the form of **tuple( , ) or tuple   ,   **, for example:
+```
+tuple_a = 1, 2
+tuple_b = (1, 2)
+print(tuple_a == tuple_b)
+True
+```
+```
+location = (13.4125, 103.866667)
+print("Latitude:", location[0]).  // similar to list, 
+print("Longitude:", location[1])
+```
+
+
+
+
+
+
 
 
 
