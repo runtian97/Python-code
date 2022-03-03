@@ -397,7 +397,7 @@ print(letters)
 ```
 
 ### Tuples: 
-// Tuple is a data type for immutable ordered sequence of elements, in the form of **tuple( , ) or tuple   ,   **, for example:
+// Tuple is a data type for immutable ordered sequence of elements, in the form of **tuple( , ) or tuple ,**, for example:
 ```
 tuple_a = 1, 2
 tuple_b = (1, 2)
@@ -409,7 +409,16 @@ location = (13.4125, 103.866667)
 print("Latitude:", location[0]).  // similar to list, 
 print("Longitude:", location[1])
 ```
+// Tuples can be used to assign multiple variables in a compact way, for example: 
+```
+dimensions = 52, 40, 100
+length, width, height = dimensions
+print("The dimensions are {} x {} x {}".format(length, width, height))
+The dimensions are 52 x 40 x 100
+```
 
+### Sets:
+//data type for **mutable unordered** collections of unique elements
 
 
 
