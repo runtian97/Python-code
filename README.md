@@ -429,14 +429,22 @@ print(unique_nums)
 
 //Sets support the **in** operator the same as lists do. You can add elements to sets using the **add** method, and remove elements using the **pop** method,
 ```
-fruit = {"apple", "banana", "orange", "grapefruit"}  # define a set
-
-print("watermelon" in fruit)  # check for element
-
+fruit = {"apple", "banana", "orange", "grapefruit"}  // define a set
+print("watermelon" in fruit)  // check for element
+False                         // watermelon does not exist in the set so returns false.
 ```
-
-
-
+```
+fruit = {"apple", "banana", "orange", "grapefruit"} 
+fruit.add("watermelon")  # add an element
+print(fruit)
+{'grapefruit', 'orange', 'watermelon', 'banana', 'apple'}
+```
+```
+fruit = {"apple", "banana", "orange", "grapefruit"} 
+print(fruit.pop())  # remove a random element
+print(fruit)
+{'orange', 'watermelon', 'banana', 'apple'}
+```
 
 
 
