@@ -419,9 +419,21 @@ The dimensions are 52 x 40 x 100
 
 ### Sets:
 //data type for **mutable unordered** collections of unique elements
+// one application of sets is to remove duplicates from a list, for example:
+```
+numbers = [1, 2, 6, 3, 1, 1, 6]
+unique_nums = set(numbers)
+print(unique_nums)
+{1, 2, 3, 6}
+```
 
+//Sets support the **in** operator the same as lists do. You can add elements to sets using the **add** method, and remove elements using the **pop** method,
+```
+fruit = {"apple", "banana", "orange", "grapefruit"}  # define a set
 
+print("watermelon" in fruit)  # check for element
 
+```
 
 
 
