@@ -419,12 +419,12 @@ The dimensions are 52 x 40 x 100
 
 ### Sets:
 //data type for **mutable unordered** collections of unique elements
-// one application of sets is to remove duplicates from a list, for example:
+// one application of sets is to remove duplicates from a list, **in sets, there is no repeating elements**, for example:
 ```
 numbers = [1, 2, 6, 3, 1, 1, 6]
 unique_nums = set(numbers)
 print(unique_nums)
-{1, 2, 3, 6}
+{1, 2, 3, 6}              
 ```
 
 //Sets support the **in** operator the same as lists do. You can add elements to sets using the **add** method, and remove elements using the **pop** method,
@@ -435,17 +435,17 @@ False                         // watermelon does not exist in the set so returns
 ```
 ```
 fruit = {"apple", "banana", "orange", "grapefruit"} 
-fruit.add("watermelon")  # add an element
+fruit.add("watermelon") // add an element
 print(fruit)
 {'grapefruit', 'orange', 'watermelon', 'banana', 'apple'}
 ```
 ```
 fruit = {"apple", "banana", "orange", "grapefruit"} 
-print(fruit.pop())  # remove a random element
+print(fruit.pop())  //remove a random element
 print(fruit)
 {'orange', 'watermelon', 'banana', 'apple'}
 ```
 
-
+### Dictionaries
 
 
