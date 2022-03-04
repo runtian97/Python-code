@@ -341,7 +341,7 @@ TypeError: 'str' object does not support item assignment
 // Order is whether the position of an element in the object can be used to access the element. Both strings and lists are ordered.
 
 
-### Useful functions for list
+#### Useful functions for list
 // len() to calculate how many elements are there in the list, for example:
 ```
 m=['a','d','v','g']
@@ -447,7 +447,8 @@ print(fruit)
 ```
 
 ### Dictionaries
-// mutable data type that stores mappings of unique keys to values (including strings, integers and floats), for example:
+// dictionary is composed of **key and value, input key, you can then get the value.** 
+// mutable data type that stores mappings of unique keys to values (including strings, integers and floats) by **brace bracket**, for example:
 ``` 
 elements = {"hydrogen": 1, "helium": 2, "carbon": 6}            
 print(elements["helium"])            //print the value mapped to "helium"
@@ -459,12 +460,43 @@ elements[4]= 'dog'                   //insert 4 with the value of 'dog' in the d
 print(elements) 
 {'hydrogen': 1, 'helium': 2, 'carbon': 6, 4: 'dog'}
 ```
+// "in" can be used to check whether the elements are in the dictionary, returns True or False, for example: 
+```
+a={'Germany':4, 'China':5, 'United states':6 }
+print("Britain" in a)
+False
+```
+//"get" can be used to look up values in the dictionary, returns True or None, for example: 
+```
+a={'Germany':4, 'China':5, 'United states':6 }
+print(a.get("dilithium"))
+None
+```
 
+#### Identity Operators
+// You can check if a key returned None with the **is** operator. You can check for the opposite using **is not**, for example:
+```
+a={'Germany':4, 'China':5, 'United states':6 }
+print(a.get("dilithium") is None).           //the result of "get" is none, using "is" to test it, we get True from the testing. 
+True
+```
+```
+a={'Germany':4, 'China':5, 'United states':6 }
+print(a.get("dilithium") is not None)        //the result of "get" is none, using "is not" to test it, we get False from the testing.
+False
+```
 
+// a default value can be set as a **return value** for "get", for example: 
+```
+a={'Germany':4, 'China':5, 'United states':6 }
+a.get('kryptonite', 'There\'s no such element!')           // "There\'s no such element!" is the default value set for return. 
+"There's no such element!"
+```
 
-
-
-
+//A more complicated example is given regarding dictionary, **list is embeded in the structure of dictionary**, for example:
+```
+animals = {'dogs': [20, 10, 15, 8, 32, 15], 'cats': [3,4,2,8,2,4], 'rabbits': [2, 3, 3], 'fish': [0.3, 0.5, 0.8, 0.3, 1]}
+```
 
 
 
