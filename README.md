@@ -418,7 +418,7 @@ The dimensions are 52 x 40 x 100
 ```
 
 ### Sets:
-//data type for **mutable unordered** collections of unique elements
+//data type for **mutable unordered** collections of unique elements, can be expressed in **brace brackets** 
 // one application of sets is to remove duplicates from a list, **in sets, there is no repeating elements**, for example:
 ```
 numbers = [1, 2, 6, 3, 1, 1, 6]
@@ -447,5 +447,30 @@ print(fruit)
 ```
 
 ### Dictionaries
+// mutable data type that stores mappings of unique keys to values (including strings, integers and floats), for example:
+``` 
+elements = {"hydrogen": 1, "helium": 2, "carbon": 6}            
+print(elements["helium"])            //print the value mapped to "helium"
+2
+```
+```
+elements= {"hydrogen": 1, "helium": 2, "carbon": 6}
+elements[4]= 'dog'                   //insert 4 with the value of 'dog' in the dictionary                
+print(elements) 
+{'hydrogen': 1, 'helium': 2, 'carbon': 6, 4: 'dog'}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
