@@ -281,7 +281,7 @@ output:
 
 ## Data Structure
 ### List
-// list is the most common and basic data structure in Python, can be created with ***square brackets***, the index starts from zero, for example:
+// list is the most common and basic data structure **mutable and ordered** in Python, can be created with ***square brackets***, the index starts from zero, for example:
 ```
 list = [1,2,3,4,56,78]
 list[0]                //all list starts from index 0 
@@ -397,7 +397,7 @@ print(letters)
 ```
 
 ### Tuples: 
-// Tuple is a data type for immutable ordered sequence of elements, in the form of **tuple( , ) or tuple ,**, for example:
+// Tuple is a data type for **immutable ordered** sequence of elements, in the form of **tuple( , ) or tuple ,**, for example:
 ```
 tuple_a = 1, 2
 tuple_b = (1, 2)
@@ -447,7 +447,30 @@ print(fruit)
 ```
 
 ### Dictionaries
-// dictionary is composed of **key and value, input key, you can then get the value.** 
+// dictionary **mutable, unordered** is composed of **key and value, input key, you can then get the value.**
+// **the keys inside the dictionary can not be mutable type like list**, for example: 
+```
+room_numbers = {
+    ['Freddie', 'Jen']: 403,
+    ['Ned', 'Keith']: 391,
+    ['Kristin', 'Jazzmyne']: 411,
+    ['Eugene', 'Zach']: 395
+}
+```
+output
+```
+Traceback (most recent call last):
+  File "vm_main3.py", line 47, in <module>
+    import main
+  File "/tmp/vmuser_mjvldhtpbv/main.py", line 2, in <module>
+    import studentMain
+  File "/tmp/vmuser_mjvldhtpbv/studentMain.py", line 1, in <module>
+    import dictionary_keys
+  File "/tmp/vmuser_mjvldhtpbv/dictionary_keys.py", line 3, in <module>
+    ['Freddie', 'Jen']: 403,
+TypeError: unhashable type: 'list'
+```
+
 // mutable data type that stores mappings of unique keys to values (including strings, integers and floats) by **brace bracket**, for example:
 ``` 
 elements = {"hydrogen": 1, "helium": 2, "carbon": 6}            
@@ -498,7 +521,19 @@ a.get('kryptonite', 'There\'s no such element!')           // "There\'s no such 
 animals = {'dogs': [20, 10, 15, 8, 32, 15], 'cats': [3,4,2,8,2,4], 'rabbits': [2, 3, 3], 'fish': [0.3, 0.5, 0.8, 0.3, 1]}
 ```
 
-//when to use dictionaries
+### Compound Data Structure
+//We can include containers in other containers to create compound data structures,For example, **this dictionary maps keys to values that are also dictionaries**
+```
+elements = {"hydrogen": {"number": 1,
+                         "weight": 1.00794,
+                         "symbol": "H"},
+              "helium": {"number": 2,
+                         "weight": 4.002602,
+                         "symbol": "He"}}
+print(elements["hydrogen"]).                              // access the data "hydrogen" in the dictionary
+{'number': 1, 'weight': 1.00794, 'symbol': 'H'}
+```
+
 
 
 
