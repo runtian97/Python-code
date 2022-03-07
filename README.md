@@ -396,6 +396,19 @@ print(letters)
 ['a', 'b', 'c', 'd', 'z']
 ```
 
+//how to **define a function(format is really important!)** to porcess operation, for example:
+```
+>>> a
+[5, 6, 7, 8, 9, 0]
+>>> def nba(a):               //define a copy function to operate the copy of a
+...     a.copy()
+...                           //empty this line to get the function start to work 
+>>> nba(a)
+>>> print(a)
+[5, 6, 7, 8, 9, 0]
+
+```
+
 ### Tuples: 
 // Tuple is a data type for **immutable ordered** sequence of elements, in the form of **tuple( , ) or tuple ,**, for example:
 ```
