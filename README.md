@@ -311,6 +311,8 @@ print(months[6:])      //print the second half year
 ['July', 'August', 'September', 'October', 'November', 'December']
 print(months[2:3])     //when slicing, the lower index is inclusive while the upper index is exclusive 
 ['March']
+print(months[::-1])    // "-1" is the interval of slicing, in this case we can list all the elements reversely, [::]can be used to list all range of elements. 
+['December', 'November', 'October', 'September', 'August', 'July', 'June', 'May', 'April', 'March', 'Feburary', 'january']
 ```
 
 // use 'in" or "not in =" to return a bool of whether an ***element exists within the list***, for example:
