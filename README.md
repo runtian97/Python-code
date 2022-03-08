@@ -494,7 +494,7 @@ print(elements["helium"])            //print the value mapped to "helium"
 ```
 ```
 elements= {"hydrogen": 1, "helium": 2, "carbon": 6}
-elements[4]= 'dog'                   //insert 4 with the value of 'dog' in the dictionary                
+elements[4]= 'dog'                   //insert key 4 with the value of 'dog' in the dictionary                
 print(elements) 
 {'hydrogen': 1, 'helium': 2, 'carbon': 6, 4: 'dog'}
 ```
@@ -510,6 +510,37 @@ a={'Germany':4, 'China':5, 'United states':6 }
 print(a.get("dilithium"))
 None
 ```
+
+//new keys as well as their corresponding values can be added into dictionary, for example:
+```
+book_dict = {}
+print("book_dict=", book_dict)
+#add key value pairs
+book_dict["vonnegut"] = "cat\'s cradle"
+book_dict["ishiguro"] = "never let me go"
+print("book_dict=", book_dict)
+book_dict= {'vonnegut': "cat's cradle", 'ishiguro': 'never let me go'}
+```
+
+// Use **keys()** and **values()**, we can retrieve the keys or calues from the dictionary, for example: 
+```
+book_dict= {'vonnegut': "cat's cradle", 'ishiguro': 'never let me go'}
+print(book_dict.keys())                             //retrieve keys from the dictionary. 
+dict_keys(['vonnegut', 'ishiguro'])
+print(book_dict.values())                           //retrieve values from the dictionary.
+dict_values(["cat's cradle", 'never let me go'])
+```
+
+// use a **for loop** to iterate through the dict keys and values, for example:
+```
+book_dict= {'vonnegut': "cat's cradle", 'ishiguro': 'never let me go'}
+>>> for key, value in book_dict.items():
+...     print(key, ":", value)
+... 
+vonnegut : cat's cradle
+ishiguro : never let me go
+```
+
 
 #### Identity Operators
 // You can check if a key returned None with the **is** operator. You can check for the opposite using **is not**, for example:
@@ -548,7 +579,19 @@ elements = {"hydrogen": {"number": 1,
 print(elements["hydrogen"]).                              // access the data "hydrogen" in the dictionary
 {'number': 1, 'weight': 1.00794, 'symbol': 'H'}
 ```
+//when a compound includes two or multiple dictionaries, we can access elements or add elements, for example:
+```
+elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
+            'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}}
 
+# todo: Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries
+# hint: helium is a noble gas, hydrogen isn't
+
+elements['hydrogen']['is_noble_gas']= False.              // get into the dictionary's dictionary
+elements['helium']['is_noble_gas']= True
+print(elements['hydrogen']['is_noble_gas'])
+print(elements['helium']['is_noble_gas'])
+```
 
 
 
