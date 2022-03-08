@@ -1,4 +1,4 @@
-# Python-code
+# Introduction to Python
 
 ## Arithmetic operators:
 addition: +
@@ -279,8 +279,8 @@ output:
 ```
 
 
-## Data Structure
-### List
+# Data Structure
+## List
 // list is the most common and basic data structure **mutable and ordered** in Python, can be created with ***square brackets***, the index starts from zero, for example:
 ```
 list = [1,2,3,4,56,78]
@@ -343,7 +343,7 @@ TypeError: 'str' object does not support item assignment
 // Order is whether the position of an element in the object can be used to access the element. Both strings and lists are ordered.
 
 
-#### Useful functions for list
+### Useful functions for list
 // len() to calculate how many elements are there in the list, for example:
 ```
 m=['a','d','v','g']
@@ -411,7 +411,7 @@ print(letters)
 
 ```
 
-### Tuples: 
+## Tuples: 
 // Tuple is a data type for **immutable ordered** sequence of elements, in the form of **tuple( , ) or tuple ,**, for example:
 ```
 tuple_a = 1, 2
@@ -432,7 +432,7 @@ print("The dimensions are {} x {} x {}".format(length, width, height))
 The dimensions are 52 x 40 x 100
 ```
 
-### Sets:
+## Sets:
 //data type for **mutable unordered** collections of unique elements, can be expressed in **brace brackets** 
 // one application of sets is to remove duplicates from a list, **in sets, there is no repeating elements**, for example:
 ```
@@ -461,7 +461,7 @@ print(fruit)
 {'orange', 'watermelon', 'banana', 'apple'}
 ```
 
-### Dictionaries
+## Dictionaries
 // dictionary **mutable, unordered** is composed of **key and value, input key, you can then get the value.**
 // **the keys inside the dictionary can not be mutable type like list**, for example: 
 ```
@@ -542,7 +542,7 @@ ishiguro : never let me go
 ```
 
 
-#### Identity Operators
+### Identity Operators
 // You can check if a key returned None with the **is** operator. You can check for the opposite using **is not**, for example:
 ```
 a={'Germany':4, 'China':5, 'United states':6 }
@@ -567,7 +567,7 @@ a.get('kryptonite', 'There\'s no such element!')           // "There\'s no such 
 animals = {'dogs': [20, 10, 15, 8, 32, 15], 'cats': [3,4,2,8,2,4], 'rabbits': [2, 3, 3], 'fish': [0.3, 0.5, 0.8, 0.3, 1]}
 ```
 
-### Compound Data Structure
+## Compound Data Structure
 //We can include containers in other containers to create compound data structures,For example, **this dictionary maps keys to values that are also dictionaries**
 ```
 elements = {"hydrogen": {"number": 1,
@@ -592,6 +592,55 @@ elements['helium']['is_noble_gas']= True
 print(elements['hydrogen']['is_noble_gas'])
 print(elements['helium']['is_noble_gas'])
 ```
+
+### Exercise 1 (how to convert a "string" to "list" then to "set") (from "list" to "set", repeating elements are excluded)
+```
+verse = "if you can keep your head when all about you are losing theirs and blaming it on you   if you can trust yourself when all men doubt you     but make allowance for their doubting too   if you can wait and not be tired by waiting      or being lied about  don’t deal in lies   or being hated  don’t give way to hating      and yet don’t look too good  nor talk too wise"
+print(verse, '\n')
+
+# split verse into list of words
+verse_list = verse.split( )                          //split the string by blank----get the list
+print(verse_list, '\n')
+
+# convert list to a data structure that stores unique elements
+verse_set = set(verse_list)                          //convert the list to set
+print(verse_set, '\n')
+
+# print the number of unique words
+num_unique = len(verse_set)                          // get length of the set
+print(num_unique, '\n')
+```
+
+### Exercise 2 (operation of dictionary and its derived operations)
+```
+verse_dict =  {'if': 3, 'you': 6, 'can': 3, 'keep': 1, 'your': 1, 'head': 1, 'when': 2, 'all': 2, 'about': 2, 'are': 1, 'losing': 1, 'theirs': 1, 'and': 3, 'blaming': 1, 'it': 1, 'on': 1, 'trust': 1, 'yourself': 1, 'men': 1, 'doubt': 1, 'but': 1, 'make': 1, 'allowance': 1, 'for': 1, 'their': 1, 'doubting': 1, 'too': 3, 'wait': 1, 'not': 1, 'be': 1, 'tired': 1, 'by': 1, 'waiting': 1, 'or': 2, 'being': 2, 'lied': 1, 'don\'t': 3, 'deal': 1, 'in': 1, 'lies': 1, 'hated': 1, 'give': 1, 'way': 1, 'to': 1, 'hating': 1, 'yet': 1, 'look': 1, 'good': 1, 'nor': 1, 'talk': 1, 'wise': 1}
+print(verse_dict, '\n')
+
+# find number of unique keys in the dictionary
+num_keys = len(verse_dict)
+print(num_keys)
+
+# find whether 'breathe' is a key in the dictionary
+contains_breathe = verse_dict.get('breathe')
+print(contains_breathe)
+
+# create and sort a list of the dictionary's keys
+sorted_keys = verse_dict.keys()
+sorted_keys = sorted(sorted_keys)
+print(sorted_keys)
+# get the first element in the sorted list of keys
+print(sorted_keys[0])
+
+# find the element with the highest value in the list of keys
+print(sorted_keys[-1]) 
+```
+
+
+
+
+
+
+
 
 
 
