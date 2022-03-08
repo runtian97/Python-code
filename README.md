@@ -635,6 +635,9 @@ print(sorted_keys[0])
 print(sorted_keys[-1]) 
 ```
 
+## Summary of Datastructure 
+![Screen Shot 2022-03-08 at 5 22 26 PM](https://user-images.githubusercontent.com/100081406/157282172-835b4d1b-66cd-4923-bcd2-dda759fbfd4d.png)
+
 
 
 
