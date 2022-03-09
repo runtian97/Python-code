@@ -639,10 +639,43 @@ print(sorted_keys[-1])
 ![Screen Shot 2022-03-08 at 5 22 26 PM](https://user-images.githubusercontent.com/100081406/157282172-835b4d1b-66cd-4923-bcd2-dda759fbfd4d.png)
 
 
+ 
+# Control flow 
+## Conditional Statements
+### if statement
+// if statement is a conditional statement that runs or skips code based on whether a condition is true or false, for example: 
+```
+>>> bank_balance= 3                         //it is important to define first before starting if statement
+>>> phone_balance = 4
+>>> if phone_balance < 5:
+...     phone_balance += 10
+...     bank_balance -= 10
+...                                         //empty one line to quit the if statement 
+>>> bank_balance 
+-7
+>>> phone_balance 
+14
+```
 
-  
+// the combination of **if, elif and else** can help to print the result, **elif can be multiple but only one else** for example:
+// for if statements, **we can use 'if' only, 'if' and 'elif', 'if' and 'else', and 'if', 'elif' and 'else' all together. **3
+```
+>>> season = 'winter'
+>>> if season == 'spring':
+...     print('plant the garden!')
+... elif season == 'summer':                    
+...     print('water the garden!')
+... elif season == 'fall':
+...     print('harvest the garden!')
+... elif season == 'winter':
+...     print('stay indoors!')
+... else:                                                  //there is no conditiuon should be added for else!!!!!
+...     print('unrecognized season')
+... 
+stay indoors!
+```
 
-
+// some 
 
 
 
