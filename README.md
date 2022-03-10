@@ -675,8 +675,19 @@ print(sorted_keys[-1])
 stay indoors!
 ```
 
-// some 
+### for loop
+// for() is used to iterate elements, for example: 
+```
+>>> cities={'Qingdao','Shanghai','Beijing'}
+>>> for city in cities:
+...     print(city)
+... 
+Shanghai
+Beijing
+Qingdao
+```
 
+//use the range() function 
 
 
 
