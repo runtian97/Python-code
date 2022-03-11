@@ -700,14 +700,74 @@ mother fucker
 
 // range(start, stop, step), 'start' is from 0 if not specified, for example:
 ```
->>> range(3)
-range(0, 3)
+>>> for i in range(0,30,5):
+...     print(i)
+... 
+0
+5
+10
+15
+20
+25
 ```
 
+//for() can be used to creat and modify list, for example: 
+```
+>>> cities = ['new york city', 'mountain view', 'chicago', 'los angeles']
+>>> len(cities)
+4
+>>> range(len(cities))
+range(0, 4)
+>>> for index in range(len(cities)):
+...     cities[index]=cities[index].title()
+... 
+>>> cities
+['New York City', 'Mountain View', 'Chicago', 'Los Angeles']
+```
 
+//we can use more than one for(), for example:
+```
+names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+usernames = []
 
+# lower the name and add elements in a new list
 
+for index in range(len(names)):         // the first loop is used to replace ' ' with '_'  
+    names[index]= names[index]. replace(' ', '_')
+    names[index]= names[index]. lower()
+for x in names:                         // the second loop is used to add elements from names to usernames. 
+    usernames.append(x)
+print(usernames)
+```
 
+//use for() to count tag, for example:
+```
+>>> tokens = ['<greeting>', 'Hello World!', '</greeting>']
+>>> 
+>>> count = 0 
+>>> for token in tokens:                // start to iterate all the elements in the list, no need to define 
+...     if token[0] == '<' and token[-1] == '>':        // for each string in the list, test the first and the last element
+...         count += 1 
+... 
+>>> count
+2
+```
+
+// how to creat an HTML list, for example: 
+```
+items = ['first string', 'second string']
+html_str = "<ul>\n"          # The "\n" here is the end-of-line char, causing
+                             # chars after this in html_str to be on next line
+
+for item in items:
+    html_str += "<li>{}</li>\n".format(item)
+html_str += "</ul>"
+
+print(html_str)
+```
+
+####Building dictionaries
+//Method
 
 
 
