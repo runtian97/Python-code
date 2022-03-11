@@ -687,7 +687,22 @@ Beijing
 Qingdao
 ```
 
-//use the range() function 
+//use the range() function with for() loop, for example:
+```
+>>> for i in range(4):
+...     print("mother fucker")
+... 
+mother fucker
+mother fucker
+mother fucker
+mother fucker
+```
+
+// range(start, stop, step), 'start' is from 0 if not specified, for example:
+```
+>>> range(3)
+range(0, 3)
+```
 
 
 
