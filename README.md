@@ -507,8 +507,8 @@ False
 //"get" can be used to look up values in the dictionary, returns True or None, for example: 
 ```
 a={'Germany':4, 'China':5, 'United states':6 }
-print(a.get("dilithium"))
-None
+print(a.get("dilithium",0)).           // if no value for 'dilithoium', then return 0. 
+0 
 ```
 
 //new keys as well as their corresponding values can be added into dictionary, for example:
@@ -767,7 +767,41 @@ print(html_str)
 ```
 
 #### Building dictionaries
-//Method
+//Method 1. use for() to create a set of counters, for example:
+```
+>>> book_title =  ['great', 'expectations','the', 'adventures', 'of', 'sherlock','holmes','the','great','gasby','hamlet','adventures','of','huckleberry','fin']
+>>> word_counter = {}
+>>> for word in book_title:                    
+...     if word not in word_counter:                 
+...         word_counter[word] = 1              //the first time the book appears, assign the value a to key        
+...     else:
+...         word_counter[word] += 1             // if not the first time, then +1(actually multiple assign the value)
+... 
+>>> word_counter 
+{'great': 2, 'expectations': 1, 'the': 2, 'adventures': 2, 'of': 2, 'sherlock': 1, 'holmes': 1, 'gasby': 1, 'hamlet': 1, 'huckleberry': 1, 'fin': 1}
+```
+
+// Method 2. use get method, for example:
+```
+>>> book_title =  ['great', 'expectations','the', 'adventures', 'of', 'sherlock','holmes','the','great','gasby','hamlet','adventures','of','huckleberry','fin'] 
+>>> word_counter = {}
+>>> for word in book_title:
+...     word_counter[word] = word_counter.get(word, 0) + 1      //loop to assign value to the key, while the initial is 0 when there is no 'word' in the dictionaries
+... 
+>>> word_counter
+{'great': 2, 'expectations': 1, 'the': 2, 'adventures': 2, 'of': 2, 'sherlock': 1, 'holmes': 1, 'gasby': 1, 'hamlet': 1, 'huckleberry': 1, 'fin': 1}
+```
+
+#### Iterating through dictionaries with for()
+//
+
+
+
+
+
+
+
+
 
 
 
