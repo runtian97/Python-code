@@ -793,7 +793,24 @@ print(html_str)
 ```
 
 #### Iterating through dictionaries with for()
-//
+// we can iterate through both keys and values, and we can use the built-in method, for example: 
+```
+>>> cast = {
+...            "Jerry Seinfeld": "Jerry Seinfeld",
+...            "Julia Louis-Dreyfus": "Elaine Benes",
+...            "Jason Alexander": "George Costanza",
+...            "Michael Richards": "Cosmo Kramer"
+...        }
+>>> print(cast.items())                               //use items() to list keys and values in the dictionary
+dict_items([('Jerry Seinfeld', 'Jerry Seinfeld'), ('Julia Louis-Dreyfus', 'Elaine Benes'), ('Jason Alexander', 'George Costanza'), ('Michael Richards', 'Cosmo Kramer')])
+>>> for key, value in cast. items():                          
+...     print("Actor: {}, Role: {}". format(key, value))        // format keys and values and put them in {}
+... 
+Actor: Jerry Seinfeld, Role: Jerry Seinfeld
+Actor: Julia Louis-Dreyfus, Role: Elaine Benes
+Actor: Jason Alexander, Role: George Costanza
+Actor: Michael Richards, Role: Cosmo Kramer
+```
 
 
 
