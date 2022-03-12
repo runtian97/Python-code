@@ -812,6 +812,24 @@ Actor: Jason Alexander, Role: George Costanza
 Actor: Michael Richards, Role: Cosmo Kramer
 ```
 
+// items() is necessary when trying to iterate through the dictionary, for example:
+```
+result = 0
+basket_items = {'apples': 4, 'oranges': 19, 'kites': 3, 'sandwiches': 8}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+
+#Iterate through the dictionary
+
+#if the key is in the list of fruits, add the value (number of fruits) to result
+for key, count in basket_items.items():          //.items() is necessary for iterate, loop key and value 
+    if key in fruits:
+        result +=  count
+
+print(result)
+23
+```
+
+
 
 
 
