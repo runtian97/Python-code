@@ -855,12 +855,99 @@ print(fruit_count, not_fruit_count)
 23 11
 ```
 
-###While loop
+### While loop
+**difference between while and for: for() declares variable in loop; while() declares judgement conditions**
+// for() is for "definite iteration", while() is for "indefinite iteration", for example: 
+```
+card_deck = [4, 11, 8, 5, 13, 2, 8, 10]
+hand = []
+while sum(hand)  < 17:              // while() shows a indefinite iteration 
+    hand.append(card_deck.pop())
+    
+print(hand)
+[10,8]
+```
 
+// while() can also be used to calculate factorial, for example:
+```
+number = 6   
+product = 1
+current = 1
+while current < 7:
+      product=current*product
+      current += 1
+   
+print(product)
+720
+```
+// for() can slao be used to calculate factorial of a number, for example:
+```
+number = 6   
+product = 1
+for number in range(1,7):          //range(), upper excluded
+    product=number*product
+    number=number-1
+    
+print(product)
+720
+```
 
+// Count by problem: use while() to count from a start_num to end_num, for example:
+```
+start_num = 5 #provide some start number
+end_num = 100#provide some end number that you stop when you hit
+count_by = 2#provide some number to count by 
 
+# write a while loop that uses break_num as the ongoing number to 
+#   check against end_num
+while start_num < end_num:
+     start_num += count_by
+     break_num= start_num 
+print(break_num)
+101
+```
 
+// combined with else to break while(), for example:
+```
+start_num = 5
+end_num = 100
+count_by = 2
 
+if start_num > end_num:
+    result = "Oops! Looks like your start value is greater than the end value. Please try again."
+
+else:
+    break_num = start_num
+    while break_num < end_num:
+        break_num += count_by
+
+    result = break_num
+
+print(result)
+```
+
+// use while() to check out the square, for example:
+```
+limit = 40
+
+# write your while loop here
+a=0 
+while a*a<=40:
+    nearest_square= a*a
+    a=a+1
+
+print(nearest_square)
+36
+```
+
+#### For() Vs. While()
+// as mentioned, for() is ideal when the number of iteration is known or finite 
+**Examples**:
+- for name in names:
+- for i in range(5):         // using range() can help to iterate through a loop for definite number
+
+// while() is ideal to iterate until a condition is met.
+**Examples**:
 
 
 
