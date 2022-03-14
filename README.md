@@ -719,7 +719,7 @@ mother fucker
 >>> range(len(cities))
 range(0, 4)
 >>> for index in range(len(cities)):
-...     cities[index]=cities[index].title()
+...     cities[index]=cities[index]if .title()
 ... 
 >>> cities
 ['New York City', 'Mountain View', 'Chicago', 'Los Angeles']
@@ -941,13 +941,35 @@ print(nearest_square)
 ```
 
 #### For() Vs. While()
-// as mentioned, for() is ideal when the number of iteration is known or finite 
+// As mentioned, for() is ideal when the number of iteration is known or finite 
 **Examples**:
 - for name in names:
 - for i in range(5):         // using range() can help to iterate through a loop for definite number
 
 // while() is ideal to iterate until a condition is met.
 **Examples**:
+- while count <= 100:
+- while user_input == 'y':           // when looping based on receiving specific user input
+
+// find and pick up odd numbers in a given list, for example:
+```
+num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191, 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
+odd = []
+for num in range(len(num_list)):             // when using for() to iterate all the elements, please use range()
+    if (num_list[num]) %2 != 0 and len(odd)<=5:         // restrain
+             odd.append(num_list[num])
+    
+print(odd)
+```
+
+
+
+
+
+
+
+
+
 
 
 
