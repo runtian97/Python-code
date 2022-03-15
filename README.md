@@ -962,6 +962,158 @@ for num in range(len(num_list)):             // when using for() to iterate all 
 print(odd)
 ```
 
+### Break, Continue
+
+- break: terminates a loop
+- continue: skips one iteration of a loop
+
+// use a break to **terminate** for(), for example:
+```
+for val in "string":
+    if val == "i":                     // when iterate to "i", break
+        break
+    print(val)
+
+print("The end")
+s
+t
+r
+The end                                // so finally iteration will stop before i
+```
+
+//use continue to **skip one iteration**, for example: 
+```
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+
+print("The end")
+s
+t
+r
+n
+g
+The end                                 // iteration 'i' is skipped  
+```
+
+// use the break to **get a string with specific length**, for example:
+```
+headlines = ["Local Bear Eaten by Man",
+             "Legislature Announces New Laws",
+             "Peasant Discovers Violence Inherent in System",
+             "Cat Rescues Fireman Stuck in Tree",
+             "Brave Knight Runs Away",
+             "Papperbok Review: Totally Triffic"]
+
+news_ticker = ""
+# write your loop here:
+
+for headline in headlines:                               // iterate all the elements in the string
+    news_ticker=news_ticker + headline+ " "              // add elements from the list to the string, plus inserting a space 
+    if len(news_ticker)>=140:                            // confine the length the string 
+        news_ticker = news_ticker[:140]                  // determine the upper limit of string
+        break 
+   
+print(news_ticker)
+Local Bear Eaten by Man Legislature Announces New Laws Peasant Discovers Violence Inherent in System Cat Rescues Fireman Stuck in Tree Brave
+```
+
+// check whether a number is prime, for example:
+```
+check_prime = [26, 39, 51, 53, 57, 79, 85]
+
+# iterate through the check_prime list
+for num in check_prime:
+
+# search for factors, iterating through numbers ranging from 2 to the number itself
+    for i in range(2, num):
+
+# number is not prime if modulo is 0
+        if (num % i) == 0:
+            print("{} is NOT a prime number, because {} is a factor of {}".format(num, i, num))
+            break
+
+# otherwise keep checking until we've searched all possible factors, and then declare it prime
+        if i == num -1:    
+            print("{} IS a prime number".format(num))
+```
+
+### Zip and Enumerate
+#### Zip
+// returns an iterator that combines multiple iterables into one sequence of tuples, for example:
+```
+a=[1,2,3,5]                         
+b=['a','c','g',9]
+print(list(zip(a,b)))
+[(1, 'a'), (2, 'c'), (3, 'g'), (5, 9)].    //coupling elements from two lists (same length)
+```
+
+// Even if the length of two lists doesn't macth each other, zip is still feasible, for example:
+```
+a=[1,2,3] 
+b=['a','c','g',9]                        // a is shorter than b
+print(list(zip(a,b)))
+[(1, 'a'), (2, 'c'), (3, 'g')]           // prioritize the shorter one 
+```
+
+// we can unpack each each tuple in the list using for(), for example: 
+```
+letters = ['a', 'b', 'c']
+nums = [1, 2, 3]
+
+for letter, num in zip(letters, nums):         //zip two lists, iterate letter and num in zip
+    print("{}: {}".format(letter, num))
+a: 1
+b: 2
+c: 3
+```
+
+// unzip a list into tuples using an asterisk, for example:
+```
+some_list = [('a', 1), ('b', 2), ('c', 3)]
+letters, nums = zip(*some_list)
+print(letters)
+print(nums)
+('a', 'b', 'c')
+(1, 2, 3)
+```
+Another example:
+```
+a=[(2,3),(4,5),(6,7)]
+c,d=zip(*a)
+print(c)
+print(d)
+(2, 4, 6)
+(3, 5, 7)
+```
+
+#### Enumerate
+// print out indices and values of a list simultaneously, for example:
+```
+letters = ['a', 'b', 'c', 'd', 'e']
+for i, letter in enumerate(letters):       //"i" is the indice and "letter" is the corresponding value
+    print(i, letter)
+    
+0 a
+1 b
+2 c
+3 d
+4 e
+```
+
+//
+
+
+
+
+
+
+
+
+
+
+
 
 
 
