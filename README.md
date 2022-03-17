@@ -1102,10 +1102,39 @@ for i, letter in enumerate(letters):       //"i" is the indice and "letter" is t
 4 e
 ```
 
-//
+// Zip coordinates: use the Zip to coordinate number from zip and unpack them, for example:
+```
+x_coord = [23, 53, 2, -12, 95, 103, 14, -5]
+y_coord = [677, 233, 405, 433, 905, 376, 432, 445]
+z_coord = [4, 16, -6, -42, 3, -6, 23, -1]
+labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
 
 
+for point in zip(labels, x_coord, y_coord, z_coord):
+    print("{}: {}, {}, {}". format(*point))              // elements are from the unzipped list 
+    
+F: 23, 677, 4
+J: 53, 233, 16
+A: 2, 405, -6
+Q: -12, 433, -42
+Y: 95, 905, 3
+B: 103, 376, -6
+W: 14, 432, 23
+X: -5, 445, -1
+```
 
+// Zip lists to a dictionary, for example:
+```
+cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
+cast_heights = [72, 68, 72, 66, 76]
+
+cast = dict(zip(cast_names, cast_heights))            // the code used to zip list into dictionary
+print(cast)
+{'Lily': 66, 'Marshall': 76, 'Robin': 68, 'Barney': 72, 'Ted': 72}
+```
+
+// Transpose with Zip, for example:
+```
 
 
 
