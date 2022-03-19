@@ -1137,14 +1137,48 @@ print(cast)
 ```
 data = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (9, 10, 11))
 
-data_transpose = tuple(zip(*data))                     //
+data_transpose = tuple(zip(*data))                     //transpose data from 4-by-3 matrix to 4-by-4 matrix 
 print(data_transpose)
+((0, 3, 6, 9), (1, 4, 7, 10), (2, 5, 8, 11))
 ```
 
+// use enumerate to modify a cast list, for example: 
+```
+cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
+heights = [72, 68, 72, 66, 76]
 
+for i, name in enumerate(cast):                    //use enumerate to modify the list
+    cast[i]=name + " "+ str(heights[i])
+    
+print(cast)
+['Barney Stinson 72', 'Robin Scherbatsky 68', 'Ted Mosby 72', 'Lily Aldrin 66', 'Marshall Eriksen 76']
+```
 
+### list comprehension
+// use an old example to illustrate list comprehension, for example:
+```
+cities=["new york", "beijing", "london"]
+capitalized_cities = []
+for city in cities:
+    capitalized_cities.append(city.title())
 
+print(capitalized_cities)
+['New York', 'Beijing', 'London']
+```
+// The code above can be changed into a more concise form, for example:
+```
+cities=["new york", "beijing", "london"]
+capitalized_cities = [city.title() for city in cities]
+print(capitalized_cities)
+['New York', 'Beijing', 'London']
+```
 
+// it is also possible to add conditions(with if) to list comprehension, for example:
+```
+squares = [x**2 for x in range(9) if x % 2 == 0]
+print(squares)
+[0, 4, 16, 36, 64]
+```
 
 
 
