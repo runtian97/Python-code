@@ -587,7 +587,7 @@ elements = {'hydrogen': {'number': 1, 'weight': 1.00794, 'symbol': 'H'},
 # todo: Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries
 # hint: helium is a noble gas, hydrogen isn't
 
-elements['hydrogen']['is_noble_gas']= False.              // get into the dictionary's dictionary
+elements['hydrogen']['is_noble_gas']= False       // get into the dictionary's dictionary
 elements['helium']['is_noble_gas']= True
 print(elements['hydrogen']['is_noble_gas'])
 print(elements['helium']['is_noble_gas'])
@@ -1148,7 +1148,7 @@ cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Mars
 heights = [72, 68, 72, 66, 76]
 
 for i, name in enumerate(cast):                    //use enumerate to modify the list
-    cast[i]=name + " "+ str(heights[i])
+    cast[i]=name + " "+ str(heights[i])            //index i is shared by two list
     
 print(cast)
 ['Barney Stinson 72', 'Robin Scherbatsky 68', 'Ted Mosby 72', 'Lily Aldrin 66', 'Marshall Eriksen 76']
@@ -1180,10 +1180,50 @@ print(squares)
 [0, 4, 16, 36, 64]
 ```
 
+//but when you need to add else, you have to move else to the beginning of the listcomp, for example:
+```
+squares = [x**2 if x % 2 == 0 else x + 3 for x in range(9)]   //put (if else) ahead of for
+print(squares)
+[0, 4, 4, 6, 16, 8, 36, 10, 64]
+```
 
+//Extract the first name from the list using list comprehension, for example:
+```
+names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smith"]
+first_names = [name.split() [0].lower() for name in names]  //there are two operations: name.split() and [0]. lower(), which is used to select the first name and lower the first alphabet of it
+print(first_names)
+['rick', 'morty', 'summer', 'jerry', 'beth']
+```
 
+// similarly, we can extract the last name in this way, just change [0] to [1], for example:
+```
+names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smith"]
+Last_names = [name.split() [1].lower() for name in names]
+print(Last_names)
+['sanchez', 'smith', 'smith', 'smith', 'smith']
+```
 
+// use list comprehension to calculate multiples of three, for example:
+```
+multiples_3 = [x * 3 for x in range(1, 21)]
+print(multiples_3)
+[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]
+```
 
+//filter names by scores, remember when working on dictionary, use items() function, for example: 
+```
+scores = {
+             "Rick Sanchez": 70,
+             "Morty Smith": 35,
+             "Summer Smith": 82,
+             "Jerry Smith": 23,
+             "Beth Smith": 98
+          }
+
+passed = [name for name, score in scores.items() if score >= 65] 
+print(passed)
+['Rick Sanchez', 'Summer Smith', 'Beth Smith']
+```
 
 
 
