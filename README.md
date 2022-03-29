@@ -1225,6 +1225,20 @@ print(passed)
 ['Rick Sanchez', 'Summer Smith', 'Beth Smith']
 ```
 
+# Functions
+## Defining functions 
+//arguments: values passed in as inputs to a function (the value included as variables)
+//difference between **print** and **return**: print provides output to the console while return provides the value that we can store and code later.
+// if there is no return, the function simply returns None.
+```
+def cylinder_volume(height, radius):
+    pi = 3.14159
+    return height * pi * radius ** 2
+
+cylinder_volume(4,6)              //function call 
+print(cylinder_volume(4,6))
+452.38896
+```
 
 
 
