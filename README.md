@@ -7,8 +7,7 @@ multiplication: *
 division: /
 exponentiation: **     //2 ** 3 = 8
 modulo: %              //find the remainder after dividing   9%2=1
-integer division: // round down the division result (only reserve the integer part)   7//2=3  -7//2=-4
-
+integer division/
 ## Reserved words in Python:
 // False await else import pass None break except in raise True class finally is return and continue for lambda try as def from nonlocal while assert 
 del global not with async elif if or yield  
@@ -1240,6 +1239,16 @@ print(cylinder_volume(4,6))
 452.38896
 ```
 
+// def function to calculate weeks and remainder, for example:
+```
+def readable_timedelta(days):
+    week = days//7
+    remainder = days%7
+    return "{} week(s) and {} day(s).". format(week, remainder)
+   
+print(readable_timedelta(10))
+1 week(s) and 3 day(s).
+```
 
 
 
