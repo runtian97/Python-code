@@ -1250,6 +1250,71 @@ print(readable_timedelta(10))
 1 week(s) and 3 day(s).
 ```
 
+## Variable scope
+//refers to which parts of a program a variable can be referenced, or used, from.
+
+// local scope: variable is only local to each function, for example:
+```
+def some_function():
+    word = "hello"                
+
+print(word)                               // this will return in an error since 
+```
+
+// global scope: variables defined outside functions, for example:
+```
+word = "hello"
+
+def some_function():
+    print(word)
+
+some_function()
+hello
+```
+**importantly, for pre-defined variables, function can not modify them. 
+
+## Documentation
+// always use docstrings for documentation, which won't influence the code, for example:
+```
+def population_density(population, land_area):
+    """Calculate the population density of an area. """        // general way of docstring(surrounded by triple quotes)
+    return population / land_area
+```
+
+## Lambda expression
+// helpful for creating quick functions which are not needed later in the code
+// lambda expression can be used to simplify the function, for example:
+```
+def multiply(x, y):
+    return x * y
+```
+can be reduced to;
+```
+multiply = lambda x, y: x * y
+```
+### Component of a Lambda Function
+// **Lambda** is used to indicate this is a lambda expression, following it are variables separated by commas, followed by a colon and the operation. 
+
+
+//Lambda with filter, for example:
+```
+cities = ["New York City", "Los Angeles", "Chicago", "Mountain View", "Denver", "Boston"]
+
+def is_short(name):
+    return len(name) < 10
+
+short_cities = list(filter(is_short, cities))
+print(short_cities)
+['Chicago', 'Denver', 'Boston']
+```
+can be reduced with the use of lambda:
+```
+is_short=lambda name : len(name) < 10
+short_cities = list(filter(is_short, cities))
+print(short_cities)
+['Chicago', 'Denver', 'Boston']
+```
+
 
 
 
