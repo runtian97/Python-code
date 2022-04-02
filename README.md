@@ -1315,8 +1315,7 @@ print(short_cities)
 ['Chicago', 'Denver', 'Boston']
 ```
 
-
-
+# Advanced topic 
 
 
 
